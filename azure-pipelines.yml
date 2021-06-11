@@ -21,11 +21,6 @@ steps:
 - task: VersionAPPX@2
   displayName: 'Version MSIX'
 
-- task: DotNetCoreInstaller@0
-  displayName: 'Use .NET Core SDK 3.0.100-preview8-013656'
-  inputs:
-    version: '3.0.100-preview8-013656'
-
 - task: VSBuild@1
   inputs:
     platform: '$(buildPlatform)'
